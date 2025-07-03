@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beena.AI | Authentic AI Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #0f172a; /* slate-900 */
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: #0f172a; /* slate-900 */
+        }
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #475569; /* slate-600 */
+            max-width: 48rem;
+            margin: 0.5rem auto 0 auto;
+        }
+        .accent-text {
+            color: #0ea5e9; /* sky-500 */
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .chart-container {
+            position: relative;
+            height: 40vh;
+            width: 80vw;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .bg-slate-100 {
+            background-color: #f1f5f9;
+        }
+        .font-handwriting {
+            font-family: 'Kalam', cursive;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-900">Beena.AI</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#opportunity" class="nav-link text-slate-600 hover:text-slate-900">What is the AI Chasm?</a>
+                <a href="#vision" class="nav-link text-slate-600 hover:text-slate-900">Our Vision</a>
+                <a href="#technology" class="nav-link text-slate-600 hover:text-slate-900">Our Technology</a>
+                <a href="#verticals" class="nav-link text-slate-600 hover:text-slate-900">Market Verticals</a>
+                <a href="#about" class="nav-link text-slate-600 hover:text-slate-900">About Us</a>
+                <a href="#next-steps" class="nav-link text-slate-600 hover:text-slate-900">Next Steps</a>
+                <a href="#cta" class="bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors">Get Involved</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="py-20 md:py-32 text-center bg-white">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                    Authentic, Trusted AI Insights.
+                </h1>
+                
+                <div class="my-8 max-w-3xl mx-auto flex flex-col items-center">
+                    <div class="inline-block">
+                        <div class="h-0.5 bg-sky-500"></div>
+                        <p class="text-lg md:text-xl text-slate-700 font-semibold text-center my-4 px-4">
+                            Conduct the critical dialogue you need to master your challenges.
+                        </p>
+                        <div class="h-0.5 bg-sky-500"></div>
+                    </div>
+                    
+                    <p class="mt-8 text-lg md:text-xl text-slate-600 text-left">
+                        <span class="font-semibold text-slate-700">Clarity is Power.</span> Get direct access to deep research, trusted data and analysis, and reasoned points of view.
+                    </p>
+                    <p class="mt-4 text-lg md:text-xl text-slate-600 text-left">
+                        <span class="font-semibold text-slate-700">We license our content directly from world-renowned experts.</span> Engage with our AI Agents with absolute confidence.
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <a href="#opportunity" class="bg-sky-500 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-sky-600 transition-colors shadow-lg">Cross the AI Chasm</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="opportunity" class="py-20 md:py-24 text-center bg-slate-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">What is the AI Chasm?</h2>
+                <div class="section-subtitle">
+                    <p>The generative AI landscape presents a fundamental paradox:</p>
+                    <p class="font-semibold text-slate-800 my-2">immense power coupled with inherent unreliability.</p>
+                    <p>This lack of verifiable authenticity creates a critical trust deficit, preventing the technology's use in high-stakes professional environments. The result is a clear and urgent market opportunity for specialized, accountable AI agents capable of delivering vetted, expert-driven insights.</p>
+                </div>
+                
+                <div class="mt-16 grid md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-red-200">
+                        <h3 class="text-xl font-bold text-red-600">AI Limitations</h3>
+                        <ul class="mt-4 space-y-3 text-slate-600">
+                            <li class="flex items-start"><span class="mr-3 text-red-500">❌</span>Remains Gullible.</li>
+                            <li class="flex items-start"><span class="mr-3 text-red-500">❌</span>Lacks Verifiable Authenticity.</li>
+                            <li class="flex items-start"><span class="mr-3 text-red-500">❌</span>Disclaims All Accountability.</li>
+                            <li class="flex items-start"><span class="mr-3 text-red-500">❌</span>Spreads Misinformation.</li>
+                            <li class="flex items-start"><span class="mr-3 text-red-500">❌</span>Delivers Unattributed Content.</li>
+                            <li class="flex items-start"><span class="mr-3 text-red-500">❌</span>Degrades Trust in High-Stakes Decisions.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-sky-500">
+                        <h3 class="text-xl font-bold text-sky-700">Our Sustainable Advantage</h3>
+                         <ul class="mt-4 space-y-3 text-slate-600">
+                            <li class="flex items-start"><span class="mr-3 text-green-500">✅</span>Leverages Licensed Expert Content.</li>
+                            <li class="flex items-start"><span class="mr-3 text-green-500">✅</span>Guarantees Verifiable Source Lineage.</li>
+                            <li class="flex items-start"><span class="mr-3 text-green-500">✅</span>Operates with Full Accountability.</li>
+                            <li class="flex items-start"><span class="mr-3 text-green-500">✅</span>Delivers Authentic, Data-Driven Advice.</li>
+                            <li class="flex items-start"><span class="mr-3 text-green-500">✅</span>Provides a Platform Built on Trust.</li>
+                            <li class="flex items-start"><span class="mr-3 text-green-500">✅</span>Maintains a Principled, Responsible Stance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="value-prop" class="py-20 md:py-24 bg-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Core Principles</h2>
+                <div class="mt-16">
+                    <div class="grid md:grid-cols-2 gap-8 text-left">
+                        <div class="bg-slate-50 p-8 rounded-xl shadow-lg border border-slate-200">
+                            <h3 class="text-xl font-bold text-sky-700 flex items-center">
+                                <span class="mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                </span> Verifiable Expertise
+                            </h3>
+                            <p class="mt-4 text-slate-600">Built on a foundation of licensed content from world-renowned experts for guaranteed authenticity and trust.</p>
+                        </div>
+                        <div class="bg-slate-50 p-8 rounded-xl shadow-lg border border-slate-200">
+                            <h3 class="text-xl font-bold text-sky-700 flex items-center">
+                                <span class="mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                                </span> Actionable Clarity
+                            </h3>
+                            <p class="mt-4 text-slate-600">Engage in a critical dialogue with our AI agents to stress-test ideas, uncover hidden patterns, and receive concrete analysis shaped by a distinct, expert point of view.</p>
+                        </div>
+                        <div class="bg-slate-50 p-8 rounded-xl shadow-lg border border-slate-200">
+                            <h3 class="text-xl font-bold text-sky-700 flex items-center">
+                                <span class="mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-8.58 3.91a2 2 0 0 1-1.66 0L3.2 17.65"/><path d="m22 12.65-8.58 3.91a2 2 0 0 1-1.66 0L3.2 12.65"/></svg>
+                                </span> Unrivaled Depth
+                            </h3>
+                            <p class="mt-4 text-slate-600">Go beyond surface-level answers with access to deep research and nuanced, reasoned points of view.</p>
+                        </div>
+                        <div class="bg-slate-50 p-8 rounded-xl shadow-lg border border-slate-200">
+                            <h3 class="text-xl font-bold text-sky-700 flex items-center">
+                                <span class="mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                                </span> Principled by Design
+                            </h3>
+                            <p class="mt-4 text-slate-600">Our AI isn't just a neutral aggregator. It operates with clear ethical guardrails and a responsible point of view, reflecting the vetted principles of its expert sources.</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex justify-center">
+                        <div class="w-full md:w-3/4 bg-slate-50 p-8 rounded-xl shadow-lg border border-slate-200 text-left">
+                           <h3 class="text-xl font-bold text-sky-700 flex items-center">
+                                <span class="mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+                                </span> Commitment to Empiricism
+                            </h3>
+                            <p class="mt-4 text-slate-600">We operate on a core principle of empiricism. Through <strong class="font-semibold text-slate-700">transparent</strong> feedback channels, we enable constant <strong class="font-semibold text-slate-700">inspection</strong> of our AI's performance. Every reported error is an opportunity for <strong class="font-semibold text-slate-700">adaptation</strong>, creating a tight feedback loop that rigorously corrects mistakes and ensures our system's integrity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="py-20 md:py-24 text-center bg-slate-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">The Future of Expertise</h2>
+                <p class="section-subtitle">
+                   Our vision is to replace the unpredictable open web's stochastic answers with a system built for trust, where you engage in a deep dialogue powered by the verifiable research and licensed content of the world's leading experts.
+                </p>
+            </div>
+        </section>
+
+        <section id="technology" class="py-20 md:py-24 bg-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Architecture Wins Technology Wars</h2>
+                <div class="section-subtitle">
+                    <p>Our platform is built on open source and well-understood protocols. We begin by ingesting licensed content from verifiable experts, which is then structured in a Retrieval-Augmented Generation (RAG) system. This curated knowledge base powers our specialized AI agents.</p>
+                    <p class="mt-4">Internally, our agents collaborate through an **Agent-to-Agent (A2A)** protocol to combine their expertise. Externally, our **Multi-platform Communication Protocol (MCP)** acts as a universal translator, allowing major platforms to query our agents for trusted answers, creating a powerful revenue-sharing model.</p>
+                </div>
+                
+                <div class="mt-16 p-8 bg-slate-100 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-slate-800">From Verifiable Content to Global Distribution</h3>
+                    <div class="mt-8 grid md:grid-cols-5 items-center gap-4 text-center">
+                        
+                        <!-- Step 1 -->
+                        <div class="col-span-1">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library mx-auto text-sky-600"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg>
+                             <p class="font-semibold mt-2 text-slate-700">Licensed Content</p>
+                        </div>
+
+                        <div class="text-4xl text-slate-300 font-thin">→</div>
+
+                        <!-- Step 2 -->
+                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database-zap mx-auto text-sky-600"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 9 3 9 3 0 0 0 9-3V5"/><path d="M3 12A9 3 0 0 0 12 15a9 3 0 0 0 9-3"/><path d="m13 18-4 4h6v-4"/></svg>
+                            <p class="font-semibold mt-2 text-slate-700">Beena.AI Platform</p>
+                            <p class="text-sm text-slate-500">(RAG + A2A Agent Network)</p>
+                        </div>
+
+                        <div class="text-4xl text-slate-300 font-thin">→</div>
+
+                        <!-- Step 3 -->
+                        <div class="col-span-1">
+                            <p class="font-semibold mb-4 text-slate-700">Global Distribution</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white p-2 rounded-md shadow-sm flex justify-center items-center" title="Google Search"><svg class="w-8 h-8" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.386-7.439-7.574s3.344-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.85l3.85-3.85C18.473 1.99 15.479 0 12.24 0 5.48 0 0 5.48 0 12.24s5.48 12.24 12.24 12.24c6.957 0 11.99-4.869 11.99-12.145 0-.885-.076-1.8-.22-2.655H12.24z" fill="#4285F4"/></svg></div>
+                                <div class="bg-white p-2 rounded-md shadow-sm flex justify-center items-center" title="YouTube"><svg class="w-8 h-8" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#FF0000"/></svg></div>
+                                <div class="bg-white p-2 rounded-md shadow-sm flex justify-center items-center" title="Meta"><svg class="w-8 h-8" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-5.302 0-9.6-4.298-9.6-9.6S6.698 2.4 12 2.4s9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6zM12 6.6c-3.033 0-5.5 2.467-5.5 5.5s2.467 5.5 5.5 5.5 5.5-2.467 5.5-5.5-2.467-5.5-5.5-5.5zm0 9c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z" fill="#000000"/></svg></div>
+                                <div class="bg-white p-2 rounded-md shadow-sm flex justify-center items-center" title="OpenAI"><svg class="w-8 h-8" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM8.28 4.56c.448 0 .81.362.81.81v9.26c0 .448-.362.81-.81.81s-.81-.362-.81-.81V5.37c0-.448.362-.81.81-.81zm7.44 0c.448 0 .81.362.81.81v9.26c0 .448-.362.81-.81.81s-.81-.362-.81-.81V5.37c0-.448.362-.81.81-.81z" fill="#000000"/></svg></div>
+                            </div>
+                            <p class="text-sm text-slate-500 mt-2">MCP Gateway</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="verticals" class="py-20 md:py-24 text-center bg-slate-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">High-Value Advisory Markets</h2>
+                <p class="section-subtitle">Our go-to-market strategy targets verticals where <strong>Distinctive Voices</strong> and <strong>Branded Advisory Content</strong> are the primary drivers of value. We have initially prioritized two such markets:</p>
+                <div class="mt-12 max-w-4xl mx-auto text-left">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="text-xl font-bold text-slate-800 mb-4">Global Commentary</h4>
+                            <p class="text-slate-600">A market defined by thought leaders like Prof. Alan Dershowitz and Prof. Victor Davis Hanson, where consumers seek out heavily researched work anchored by a unique and trusted point of view.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="text-xl font-bold text-slate-800 mb-4">Effective Tech Teams</h4>
+                            <p class="text-slate-600">A billion-dollar advisory space where distinct, competing methodologies like Scrum and SAFe demonstrate a clear market demand for structured, branded expertise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="model" class="py-20 md:py-24 bg-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Business Model</h2>
+                <p class="section-subtitle">
+                    Our go-to-market strategy is to test multiple revenue models, starting with two distinct experiments: user subscriptions and strategic B2B partnerships. Our hypothesis is that while subscriptions will build our foundational user base, partnerships will unlock high-margin revenue-sharing opportunities with major distribution partners. The chart below is illustrative of a potential long-term revenue mix.
+                </p>
+                <div class="mt-16 grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <h3 class="text-2xl font-bold text-slate-800">Primary Revenue Streams</h3>
+                        <ul class="mt-6 space-y-4">
+                           <li class="flex items-center"><span class="text-sky-500 text-xl mr-3">▶</span><div><h4 class="font-semibold">Subscription Access</h4><p class="text-sm text-slate-500">Tiered plans for individuals and enterprises.</p></div></li>
+                           <li class="flex items-center"><span class="text-sky-500 text-xl mr-3">▶</span><div><h4 class="font-semibold">Usage-Based Fees</h4><p class="text-sm text-slate-500">Per-query charges for specialized consultations.</p></div></li>
+                           <li class="flex items-center"><span class="text-sky-500 text-xl mr-3">▶</span><div><h4 class="font-semibold">API Access</h4><p class="text-sm text-slate-500">Licensing our agents to third-party platforms.</p></div></li>
+                           <li class="flex items-center"><span class="text-sky-500 text-xl mr-3">▶</span><div><h4 class="font-semibold">Platform Partnerships</h4><p class="text-sm text-slate-500">Revenue sharing with strategic partners like Google.</p></div></li>
+                        </ul>
+                    </div>
+                     <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+        <section id="about" class="py-20 md:py-24 bg-slate-100 text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Team</h2>
+                <div class="mt-12 max-w-5xl mx-auto p-8 border border-slate-200 rounded-2xl">
+                    <div class="relative h-[500px] font-handwriting">
+                        <!-- Connecting lines -->
+                        <svg class="absolute top-0 left-0 w-full h-full" width="100%" height="100%" viewBox="0 0 600 400">
+                           <ellipse cx="300" cy="250" rx="280" ry="140" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+                           <line x1="150" y1="80" x2="300" y2="170" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="6 6"/>
+                           <line x1="450" y1="80" x2="300" y2="170" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="6 6"/>
+                        </svg>
+                        
+                        <!-- External Advisor 1: Danny -->
+                        <div class="absolute top-0 left-1/2 -translate-x-[180%] w-56 text-center">
+                            <a href="https://gothamvc.com/portfolio/daniel-schultz/" target="_blank" class="w-20 h-20 rounded-full bg-white mx-auto flex items-center justify-center shadow-lg text-slate-600 p-4 hover:shadow-xl transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                            </a>
+                            <h4 class="font-bold mt-2"><a href="https://gothamvc.com/portfolio/daniel-schultz/" target="_blank" class="hover:underline">Danny Schultz</a></h4>
+                            <p class="text-sm text-slate-600">Managing Director, Gotham Ventures, Podcaster</p>
+                            <p class="text-xs italic mt-1">"Let's tell two stories. Let's be sure you are ready for investment. This is pretty interesting. Let's get ready for a podcast to people who care about Israel."</p>
+                        </div>
+
+                        <!-- External Advisor 2: Akiba -->
+                        <div class="absolute top-0 right-1/2 translate-x-[180%] w-56 text-center">
+                            <a href="https://www.linkedin.com/in/akiba-covitz/" target="_blank" class="w-20 h-20 rounded-full bg-white mx-auto flex items-center justify-center shadow-lg text-slate-600 p-4 hover:shadow-xl transition-shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                            </a>
+                            <h4 class="font-bold mt-2"><a href="https://www.linkedin.com/in/akiba-covitz/" target="_blank" class="hover:underline">Akiba Covitz</a></h4>
+                            <p class="text-sm text-slate-600">Chief Strategy Officer, ZOA</p>
+                            <p class="text-xs italic mt-1">"There are a few people whose content you should license ASAP. Let me introduce you."</p>
+                        </div>
+                        
+                        <!-- Person 1: Rob -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[90%] w-56 text-center">
+                            <a href="https://www.linkedin.com/in/robvrubin/" target="_blank" class="hover:underline"><h4 class="font-bold mb-2">Rob Rubin, Ph.D. <span class="text-sky-800">☕</span></h4></a>
+                            <div class="w-24 h-24 rounded-full bg-white mx-auto flex items-center justify-center shadow-lg text-sky-800 p-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M18 8h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1"/><path d="M6 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1"/><path d="M12 12v6a2 2 0 0 0 2 2h2"/></svg>
+                            </div>
+                            <p class="text-xs italic mt-1">"Could not read another article in the NYTimes without asking: Where are the facts and balanced perspective?"</p>
+                        </div>
+
+                        <!-- Person 2: Itai -->
+                        <div class="absolute bottom-8 left-[15%] w-56 text-center">
+                             <a href="https://www.linkedin.com/in/itai-eliach/" target="_blank" class="hover:underline"><h4 class="font-bold mt-2">Itai Eliach <span class="text-amber-700">☕</span></h4></a>
+                             <div class="w-24 h-24 rounded-full bg-white mx-auto flex items-center justify-center shadow-lg text-gray-700 p-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2"/><path d="M19 8h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2"/><path d="M5 8h2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5"/></svg>
+                            </div>
+                            <p class="text-sm text-slate-600">Agent Prompting</p>
+                            <p class="text-xs italic mt-1">"IDF, Student frustrated of hearing mis-information in Zionism class. really."</p>
+                        </div>
+
+                        <!-- Person 3: Gabe -->
+                        <div class="absolute bottom-8 right-[15%] w-56 text-center">
+                             <a href="https://www.linkedin.com/in/gabriel-suissa/" target="_blank" class="hover:underline"><h4 class="font-bold mt-2">Gabriel Suissa <span class="text-gray-700">☕</span></h4></a>
+                             <div class="w-24 h-24 rounded-full bg-white mx-auto flex items-center justify-center shadow-lg text-gray-700 p-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2"/><path d="M19 8h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2"/><path d="M5 8h2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5"/></svg>
+                            </div>
+                            <p class="text-sm text-slate-600">Infrastructure</p>
+                            <p class="text-xs italic mt-1">"Built the Infrastructure and the Talmudic layout! Never underestimate the power of fun!"</p>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mt-8">Three guys have coffee together in Tel Aviv.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="next-steps" class="py-20 md:py-24 bg-white text-center">
+             <div class="container mx-auto px-6">
+                <h2 class="section-title">Strategic Imperatives & Next Steps</h2>
+                <p class="section-subtitle">
+                    Our path forward is clear and focused. We are moving decisively to secure our position as the leader in the knowledge-based Agentic AI market. These are our immediate priorities.
+                </p>
+                <div class="mt-16 max-w-2xl mx-auto">
+                    <div class="relative pl-8">
+                        <!-- The vertical line of the ladder -->
+                        <div class="absolute left-4 top-0 h-full w-0.5 bg-sky-200"></div>
+
+                        <!-- Step 1 -->
+                        <div class="relative mb-12">
+                            <div class="absolute left-[-2rem] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-sky-500 text-white font-bold">1</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-slate-800">Secure Foundational Content & IP</h4>
+                                <p class="mt-1 text-slate-600">Execute our content strategy by securing licensing agreements with initial flagship authors and key advisory organizations in our target verticals. Concurrently, we will file foundational patents to protect our core technology and establish a defensible long-term advantage.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative mb-12">
+                            <div class="absolute left-[-2rem] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-sky-500 text-white font-bold">2</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-slate-800">Launch Minimum Viable Product (MVP)</h4>
+                                <p class="mt-1 text-slate-600">Release the platform to an initial cohort of beta customers, focusing on validating the core user experience and our feedback loop for empirical improvement.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative">
+                            <div class="absolute left-[-2rem] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-sky-500 text-white font-bold">3</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-slate-800">Penetrate Initial Verticals & Establish Distribution</h4>
+                                <p class="mt-1 text-slate-600">Execute a targeted go-to-market strategy for the "Global Commentary" and "Effective Tech Teams" markets to generate initial revenue. Simultaneously, initiate formal discussions with global distribution partners to scale our reach.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="cta" class="py-20 md:py-24 bg-slate-800 text-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-extrabold">Join Us in Building the Future of Trusted AI.</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
+                    We are seeking investment, strategic partnerships, and key talent to accelerate our market entry.
+                </p>
+                <div class="mt-8">
+                    <a href="mailto:contact@beena.ai" class="bg-sky-500 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-sky-600 transition-colors shadow-lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Beena.AI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        
+        // AI Compute Chart
+        const aiComputeCtx = document.getElementById('aiComputeChart');
+        if (aiComputeCtx) {
+            const aiComputeChart = new Chart(aiComputeCtx.getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: ['2012 (AlexNet)', '2018 (AlphaGo Zero)', '2023 (GPT-4)'],
+                    datasets: [{
+                        label: 'Training FLOPS (Floating-Point Operations Per Second)',
+                        data: [1e15, 1e22, 1e25], // Using logarithmic scale for visualization
+                        backgroundColor: 'rgba(14, 165, 233, 0.6)',
+                        borderColor: 'rgba(14, 165, 233, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            type: 'logarithmic',
+                            ticks: {
+                               callback: function(value, index, values) {
+                                    return value.toExponential() + ' FLOPS'
+                               }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Time Spent Chart
+        const timeSpentCtx = document.getElementById('timeSpentChart');
+        if(timeSpentCtx) {
+            const timeSpentChart = new Chart(timeSpentCtx.getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: ['2018', '2020', '2022', '2024'],
+                    datasets: [{
+                        label: 'TikTok (% Time Spent)',
+                        data: [2, 15, 28, 38],
+                        borderColor: 'rgba(14, 165, 233, 1)',
+                        backgroundColor: 'rgba(14, 165, 233, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                }, {
+                    label: 'Facebook (% Time Spent)',
+                    data: [30, 28, 25, 22],
+                    borderColor: 'rgba(100, 116, 139, 1)',
+                     backgroundColor: 'rgba(100, 116, 139, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+             options: {
+                responsive: true,
+                maintainAspectRatio: false,
+            }
+        });
+        }
+
+        // Revenue Chart
+        const revenueChartCtx = document.getElementById('revenueChart');
+        if(revenueChartCtx) {
+            const revenueChart = new Chart(revenueChartCtx.getContext('2d'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Subscription Access', 'Usage-Based Fees', 'API Access', 'Platform Partnerships'],
+                    datasets: [{
+                        label: 'Revenue Streams',
+                        data: [45, 20, 25, 10],
+                        backgroundColor: [
+                            'rgba(14, 165, 233, 0.8)',
+                            'rgba(56, 189, 248, 0.8)',
+                            'rgba(125, 211, 252, 0.8)',
+                            'rgba(7, 89, 133, 0.8)',
+                        ],
+                        borderColor: '#f8fafc',
+                        borderWidth: 2,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
